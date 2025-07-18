@@ -1,7 +1,12 @@
 mart HR Management System
 A comprehensive, AI-powered HR management system that automates the entire recruitment workflow from resume upload to candidate evaluation. Built with modern React.js frontend and Node.js backend, integrated with AWS cloud services for scalability and AI capabilities.
 
-![HR Dashboard](https://img.shields.io/badge/Status-Production%20Ready-brightgreenelds.
+<img width="1781" height="877" alt="image" src="https://github.com/user-attachments/assets/3e2e787c-8e14-4523-8000-1e9a971724a5" />
+<img width="1901" height="858" alt="image" src="https://github.com/user-attachments/assets/e8023e31-e514-446c-89ff-af7725eb87f0" />
+<img width="1882" height="925" alt="image" src="https://github.com/user-attachments/assets/97082fef-7224-4412-8edf-223d28ac14fd" />
+<img width="1478" height="864" alt="image" src="https://github.com/user-attachments/assets/b3a95129-e85e-466f-9d55-f878fe4837a0" />
+<img width="1885" height="922" alt="image" src="https://github.com/user-attachments/assets/c8459f0d-03ad-42a3-8dc4-9892c206d80b" />
+<img width="1145" height="850" alt="image" src="https://github.com/user-attachments/assets/f37cef04-f56d-4c32-8902-685b47b2794c" />
 
 Core Functionality
 🔐 Secure Authentication - AWS Cognito-powered enterprise login
