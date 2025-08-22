@@ -1,4 +1,4 @@
-mart HR Management System
+Smart HR Management System
 A comprehensive, AI-powered HR management system that automates the entire recruitment workflow from resume upload to candidate evaluation. Built with modern React.js frontend and Node.js backend, integrated with AWS cloud services for scalability and AI capabilities.
 
 <img width="1781" height="877" alt="image" src="https://github.com/user-attachments/assets/3e2e787c-8e14-4523-8000-1e9a971724a5" />
