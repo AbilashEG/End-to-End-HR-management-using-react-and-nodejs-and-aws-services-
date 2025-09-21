@@ -1,0 +1,171 @@
+/* Add to your App.css or combined.css */
+
+/* Enhanced Navigation Styles */
+.workflow-nav {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: rgba(255, 255, 255, 0.95);
+  padding: 15px 20px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  gap: 15px;
+  flex-wrap: wrap;
+}
+
+.workflow-btn {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 12px 20px;
+  border: 2px solid #e2e8f0;
+  background: white;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  font-size: 0.9rem;
+  font-weight: 500;
+  color: #64748b;
+  position: relative;
+}
+
+.workflow-btn:hover {
+  border-color: #4f46e5;
+  transform: translateY(-2px);
+  box-shadow: 0 5px 15px rgba(79, 70, 229, 0.2);
+}
+
+.workflow-btn.active {
+  border-color: #4f46e5;
+  background: #4f46e5;
+  color: white;
+  box-shadow: 0 5px 15px rgba(79, 70, 229, 0.3);
+}
+
+.workflow-btn.legacy {
+  opacity: 0.7;
+  border-style: dashed;
+}
+
+.workflow-btn.legacy::after {
+  content: "Legacy";
+  position: absolute;
+  top: -8px;
+  right: -8px;
+  background: #f59e0b;
+  color: white;
+  font-size: 0.6rem;
+  padding: 2px 6px;
+  border-radius: 4px;
+  font-weight: 600;
+}
+
+.workflow-btn:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+  transform: none;
+}
+
+.step-number {
+  background: #4f46e5;
+  color: white;
+  width: 24px;
+  height: 24px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 0.8rem;
+  font-weight: 600;
+  margin-bottom: 5px;
+}
+
+.workflow-btn.active .step-number {
+  background: white;
+  color: #4f46e5;
+}
+
+.sub-counters {
+  display: flex;
+  gap: 5px;
+  margin-top: 5px;
+}
+
+.counter-badge {
+  font-size: 0.7rem;
+  padding: 2px 6px;
+  border-radius: 4px;
+  font-weight: 600;
+}
+
+.l1-badge {
+  background: #fbbf24;
+  color: white;
+}
+
+.l2-badge {
+  background: #10b981;
+  color: white;
+}
+
+.nav-arrow {
+  font-size: 1.2rem;
+  color: #64748b;
+  font-weight: bold;
+}
+
+.nav-divider {
+  font-size: 1.5rem;
+  color: #e2e8f0;
+  font-weight: bold;
+}
+
+/* Workflow Indicator Updates */
+.workflow-indicator {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  background: rgba(79, 70, 229, 0.1);
+  padding: 8px 15px;
+  border-radius: 20px;
+  font-size: 0.9rem;
+  font-weight: 500;
+  color: #4f46e5;
+}
+
+/* Responsive Updates */
+@media (max-width: 1200px) {
+  .workflow-nav {
+    justify-content: flex-start;
+    overflow-x: auto;
+    padding: 10px 15px;
+  }
+  
+  .workflow-btn {
+    min-width: 140px;
+    padding: 10px 15px;
+    font-size: 0.8rem;
+  }
+  
+  .sub-counters {
+    flex-direction: column;
+    gap: 2px;
+  }
+}
+
+@media (max-width: 768px) {
+  .workflow-nav {
+    flex-direction: column;
+    gap: 10px;
+    padding: 15px;
+  }
+  
+  .nav-arrow,
+  .nav-divider {
+    display: none;
+  }
+  
+  .workflow-btn {
+    width: 100%;
+    max-width: 300px;
+  }
+}
